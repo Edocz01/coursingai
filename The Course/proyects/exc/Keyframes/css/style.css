@@ -1,0 +1,59 @@
+* /* Util para siempre resetear la pagina */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    display: flex; /* Hace una caja*/
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.div
+{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation-name: xk-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*
+h1
+{
+    size: 2.5em;
+    font-family: monospace;
+    letter-spacing: 0.10em;
+    border-right: 0.15em solid orange;
+    overflow: hidden;
+    
+}
+*/
+
+@keyframes xk-animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* 
+@keyframes typing
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+*/
